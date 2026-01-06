@@ -1,0 +1,8 @@
+E:\lion7\Lion7\Day3_01\bin\Debug\Day3_01.exe.config
+E:\lion7\Lion7\Day3_01\bin\Debug\Day3_01.exe
+E:\lion7\Lion7\Day3_01\bin\Debug\Day3_01.pdb
+E:\lion7\Lion7\Day3_01\obj\Debug\Day3_01.csproj.AssemblyReference.cache
+E:\lion7\Lion7\Day3_01\obj\Debug\Day3_01.csproj.CoreCompileInputs.cache
+E:\lion7\Lion7\Day3_01\obj\Debug\Day3_01.exe
+E:\lion7\Lion7\Day3_01\obj\Debug\Day3_01.pdb
+E:\lion7\Lion7\Day3_01\obj\Debug\Day3_01.exe.config
