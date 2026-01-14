@@ -12,8 +12,29 @@ namespace Day06_02
         [DllImport("msvcrt.dll")]
         static extern int _getch(); //c언어 함수 가져옴
 
+        static void ClearBuffer(char[,] screen)
+        {
+            for (int y = 0; y < screen.GetLength(0); y++)
+                for (int x = 0; x < screen.GetLength(1); x++)
+                    screen[y, x] = ' ';
+        }
+
+        static void DrawString(char[,] screen, int x, int y, string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (x + i >= 0 && x + i < screen.GetLength(1))
+                    screen[y, x + i] = str[i];
+            }
+        }
+
         static void Main(string[] args)
         {
+            const int WIDTH = 80;
+            const int HEIGHT = 25;
+
+            char[,] screen = new char[HEIGHT, WIDTH];
+
             string[] player = new string[]
             {
                 "->",
@@ -47,7 +68,7 @@ namespace Day06_02
                     //현재 시간 세팅
                     dwTime = Environment.TickCount;
 
-                    Console.Clear();
+                    ClearBuffer(screen);
 
                     //키영역
                     int pressKey;
@@ -93,29 +114,33 @@ namespace Day06_02
 
                     for (int i = 0; i < player.Length; i++)
                     {
-                        //콘솔좌표 설정 플레이어X 플레이어Y
-                        Console.SetCursorPosition(playerX, playerY + i);
-                        //문자열배열 출력
-                        Console.WriteLine(player[i]);
+                        DrawString(screen, playerX, playerY + i, player[i]);
                     }
 
                     if (atkList.Count > 0)
                     {
-                        for (int i = 0; i < atkList.Count; i++)
+                        for (int i = atkList.Count - 1; i >= 0; i--)
                         {
-                            Console.SetCursorPosition(atkList[i].Item1, atkList[i].Item2);
-                            Console.WriteLine("->");
+                            DrawString(screen, atkList[i].Item1, atkList[i].Item2, "->");
 
                             if (atkList[i].Item1 > 75)
-                            {
-                                atkList.Remove(atkList[i]);
-                            }
+                                atkList.RemoveAt(i);
                             else
-                            {
                                 atkList[i] = (atkList[i].Item1 + 1, atkList[i].Item2);
-                            }
                         }
+
                     }
+
+                    StringBuilder sb = new StringBuilder();
+                    for (int y = 0; y < HEIGHT; y++)
+                    {
+                        for (int x = 0; x < WIDTH; x++)
+                            sb.Append(screen[y, x]);
+                        sb.AppendLine();
+                    }
+
+                    Console.SetCursorPosition(0, 0);
+                    Console.Write(sb.ToString());
                 }
             }
         }

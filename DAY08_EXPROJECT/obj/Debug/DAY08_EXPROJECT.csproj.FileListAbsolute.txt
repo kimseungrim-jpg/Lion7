@@ -1,0 +1,8 @@
+E:\lion7\Lion7\DAY08_EXPROJECT\bin\Debug\DAY08_EXPROJECT.exe.config
+E:\lion7\Lion7\DAY08_EXPROJECT\bin\Debug\DAY08_EXPROJECT.exe
+E:\lion7\Lion7\DAY08_EXPROJECT\bin\Debug\DAY08_EXPROJECT.pdb
+E:\lion7\Lion7\DAY08_EXPROJECT\obj\Debug\DAY08_EXPROJECT.csproj.AssemblyReference.cache
+E:\lion7\Lion7\DAY08_EXPROJECT\obj\Debug\DAY08_EXPROJECT.csproj.CoreCompileInputs.cache
+E:\lion7\Lion7\DAY08_EXPROJECT\obj\Debug\DAY08_EXPROJECT.exe
+E:\lion7\Lion7\DAY08_EXPROJECT\obj\Debug\DAY08_EXPROJECT.pdb
+E:\lion7\Lion7\DAY08_EXPROJECT\obj\Debug\DAY08_EXPROJECT.exe.config

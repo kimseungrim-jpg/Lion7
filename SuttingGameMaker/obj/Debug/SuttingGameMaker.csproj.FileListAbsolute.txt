@@ -1,0 +1,8 @@
+E:\lion7\Lion7\SuttingGameMaker\bin\Debug\SuttingGameMaker.exe.config
+E:\lion7\Lion7\SuttingGameMaker\bin\Debug\SuttingGameMaker.exe
+E:\lion7\Lion7\SuttingGameMaker\bin\Debug\SuttingGameMaker.pdb
+E:\lion7\Lion7\SuttingGameMaker\obj\Debug\SuttingGameMaker.csproj.AssemblyReference.cache
+E:\lion7\Lion7\SuttingGameMaker\obj\Debug\SuttingGameMaker.csproj.CoreCompileInputs.cache
+E:\lion7\Lion7\SuttingGameMaker\obj\Debug\SuttingGameMaker.exe
+E:\lion7\Lion7\SuttingGameMaker\obj\Debug\SuttingGameMaker.pdb
+E:\lion7\Lion7\SuttingGameMaker\obj\Debug\SuttingGameMaker.exe.config
